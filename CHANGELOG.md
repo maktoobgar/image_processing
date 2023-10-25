@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- 🎉 feat: exercise2-2 fully added
 - 🎉 feat: exercise2-1 fully added
 
 <!-- ## [0.0.2] - 2022-12-07
