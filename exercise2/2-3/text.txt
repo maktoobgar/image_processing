@@ -1,0 +1,78 @@
+Resource: https://medium.com/@maktoobgar/how-to-validate-api-inputs-in-gin-f2af4a3ce43e
+
+Godash, Lodash for Golang
+
+Working as a developer, I always wanted to learn new technologies, young languages and different architectures to use them in my journey.
+
+Earlier on my way, I made a new friend and he told me about a language called golang and I became a big fan.
+Long story short, soon I started learning it, wanted to work on an opensource project to learn it even more and after some time, I started working on a project, part-time, with some of my friends for about 11 months and that project now has about 400 commits and it’s called [godash](https://github.com/golodash/godash).
+What Is Godash?
+
+Who doesn’t know [lodash](https://lodash.com), right?
+If you don’t know, I’m gonna define it in one line:
+
+    lodash is a library that makes life easier when coding in javascript.
+
+So basically I wanted to make life easier to code in golang, yeah… that’s it. nothing too hype about this.
+I mean… technically I wanted to suffer less but ended up suffering even more but it doesn’t matter. 😅 I started coding and 11 months later, I’m here to announce v1.2.0 of godash.
+Basic Usage
+
+First let’s install it by running:
+
+go get github.com/golodash/godash/...
+
+Then import slices package:
+
+import "github.com/golodash/godash/slices"
+
+And now let’s use FindIndex function to find index of an element:
+
+i := slices.FindIndex([]int{1, 2, 3, 4, 5, 6}, 3)
+
+Then if you print i, you get 2 as an answer.
+More Complex Scenarios
+
+What if our elements are more complex than comparable elements?
+What if our elements are interface{} type and anything can be inside them?
+Actually no problem.
+Have a look at this examples:
+
+type Person struct {
+  name string
+  age  int
+}func NewPerson(name string, age int) Person {
+  return Person{name, age}
+}func main() {
+  stuff := []interface{}{0, NewPerson("james", 26), "some random string"}
+  i := slices.FindIndex(stuff, NewPerson("james", 26))
+  fmt.Println(i)
+}
+
+Output will be 1.
+Documentation
+
+In this project, we ended up adding full documentation about every function and serve them on internet.
+
+You can find latest version of documentations [here](https://godash.maktoobgar.ir).
+More Technical About Godash
+
+Godash is written in go-v1.17 and because there isn’t [generics](https://go.dev/doc/tutorial/generics) in go-v1.17, you can see [reflect](https://pkg.go.dev/reflect) everywhere in source code of this project.
+
+At this time, godash has 93 functions divided in 5 different packages to help developers in their journeys.
+1. generals (not like a military thing, I just made a mistake in the name and just decided to not change it…)
+2. maths (I know… again, just decided to make a convention out of it at this point, get over it guys… I made a whole library 😅)
+3. numbers
+4. slices
+5. strings
+
+All functions have test cases with different scenarios to approve basic functionality and question their behaviors with different scenarios.
+
+All functions have a benchmark which brings their worst case performance scenario on and shows their worst performance in action.
+Upcoming
+
+More technical information about performance side of godash(comparing godash benchmarks with generics implementations of the same functions in godash) comes in next week, I believe.
+If you’re interested, follow me up to get informed as soon as that happens.
+
+Godash’s repository:
+
+https://github.com/golodash/godash
