@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- 🎉 feat: exercise3-1 fully added
 - 🎉 feat: exercise2-3 halfly added(has bugs)
 - 🎉 feat: exercise2-2 fully added
 - 🎉 feat: exercise2-1 fully added
