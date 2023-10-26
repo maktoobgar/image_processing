@@ -31,7 +31,7 @@ A new image which will be a result of this operation: Image number 2 - Image num
 ![](shrunk_original_minus_shrunk_of_shrunk_original.png)
 ## Analysis
 
-In Images from 1 to 5 there are so many small changes which are not really huge and not understandable, so let's accept them as a fact and move on.
+In Images from 1 to 5 there are so many small changes which are not really huge and complicated, so let's accept them as a fact and move on.
 
 ### Image Number 6
 
