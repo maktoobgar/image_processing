@@ -16,7 +16,7 @@ Just take a look at this other example:
 
 ![](kronecker2.png)
 
-Based on these examples, we can define which when a 2x2 matrix goes through a Kronecker Product with another 2x2 matrix, it becomes a 4x4 matrix and when a 2x3 goes through with a 4x4 matrix, it becomes 8x24, in general:
+Based on these examples, we can define which when a 2x2 matrix goes through a Kronecker Product with another 2x2 matrix, it becomes a 4x4 matrix and when a 2x3 goes through with a 4x4 matrix, it becomes 8x12, in general:
 
 When a AxB matrix goes through a Kronecker Product with a CxD matrix, it will result a (A\*C)x(B\*D) matrix.
 
