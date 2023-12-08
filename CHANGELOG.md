@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- 🎉 feat: exercise9 fully added
 - 🎉 feat: exercise8 fully added
 - 🎉 feat: exercise7 fully added
 - 🎉 feat: exercise6 halfly added, description of why needed
