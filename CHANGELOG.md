@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- 🎉 feat: exercise10 fully added
 - 🎉 feat: exercise9 fully added
 - 🎉 feat: exercise8 fully added
 - 🎉 feat: exercise7 fully added
